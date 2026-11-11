@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.orangegrovelodge.com.ng" }],
+      "destination": "https://orangegrovelodge.com.ng/$1",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    { "source": "/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+  ]
+}
